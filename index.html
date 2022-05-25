@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      #cookiecount {
+        display: inline;
+      }
+      body {
+        font-weight: bold;
+        font-size: 24;
+        background-color: grey;
+        font-family: Courier, monospace;
+      }
+      .container {
+        height: 400px;
+        position: relative;
+        border: 3px none;
+      }
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      button {
+        background: transparent;
+        border: none !important;
+        font-size: 128;
+        box-shadow: 20px 10px 20px gray;
+        border-radius: 50%;
+      }
+      button:active {
+        box-shadow: 0 0 0 white;
+        margin: 12px 20px 4px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      🍪 Count:
+      <div id="cookiecount"></div>
+    </div>
+    <div id="cookiePsec">🍪/Second:</div>
+    <div class="container">
+      <div class="center"><button onclick=" clickButton()">🍪</button></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
